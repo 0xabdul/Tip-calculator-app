@@ -280,22 +280,22 @@ button:active{
 }
 @media (max-width:420px) {
     #cont{
-        width:17rem;
+        width:19rem;
      }
      #first-wrapper{
         width:13rem;
     }
     #biller,#num-people{
-        width:14rem
+        width:16rem;
      }
      #second-wrapper{
-        width:14rem;
+        width:16rem;
     }
     #btn{
-        width:14rem;
+        width:16rem;
      }
      h1{
-        left:7rem;
+        left:8rem;
      }
      #component{
         grid-template-columns: auto auto;
@@ -320,7 +320,7 @@ button:active{
         width:5rem;
     }
     #errors{
-        left:7rem;
+        left:9rem;
     }
     #priceone,#pricetwo{
         font-size:1.5rem;
@@ -343,15 +343,15 @@ button:active{
         top:-0.8rem;
     }
 }
-@media (max-width:330px) {
+@media (max-width:345px) {
     #cont{
-        width:14rem;
+        width:15rem;
      }
      #first-wrapper{
         width:8rem;
     }
     #biller,#num-people{
-        width:10rem;
+        width:12rem;
      }
      #component{
         grid-template-columns: auto ;
@@ -376,18 +376,22 @@ button:active{
         width:9rem;
     }
     #errors{
-        left:3rem;
+        left:5rem;
     }
     #priceone,#pricetwo{
         font-size:1.5rem;
     }
     #second-wrapper{
-        width:11rem;
+        width:12rem;
     }
     #btn{
-        width:11rem;
+        width:12rem;
      }
      h1{
         left:5.5rem;
      }
+     body{
+        padding-top:13rem;
+        padding-bottom:4rem;
+    }
 }
