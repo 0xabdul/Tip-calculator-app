@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "Space Mono", monospace;
+}
+:root{
+--Strongcyan: hsl(172, 67%, 45%);
+--Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Grayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Verylightgrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+label{
+    display: flex;
+    flex-direction: column;
+    width:10rem;
+    font-weight:700;
+}
+h1{
+   letter-spacing:0.5rem;
+   width:5rem;
+   position: relative;
+   left:20rem;
+   font-size:1.2rem;
+   top:-2.5rem;
+   color:var(--Darkgrayishcyan)
+}
+#component{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    width:20rem;
+    position: relative;
+    top:1rem;
+    gap:1rem;
+}
+#custom{
+    width:5rem;
+}
+button:nth-child(1){
+    padding:0.7rem 2.2rem 0.7rem 2.2rem;
+    border:0;
+    background-color: var(--Verydarkcyan);
+    border-radius:0.4rem;
+    color:white;
+    font-weight:700;
+}
+button:nth-child(2){
+    padding:0.5rem 2.2rem 0.5rem 2.2rem;
+    border:0;
+    background-color: var(--Verydarkcyan);
+    border-radius:0.4rem;
+    color:white;
+    font-weight:700;
+}
+button:nth-child(3){
+    padding:0.5rem 2.2rem 0.5rem 2.2rem;
+    border:0;
+    width:6rem;
+    background-color: var(--Verydarkcyan);
+    border-radius:0.4rem;
+    color:white;
+    font-weight:700;
+}
+h2{
+    font-size:1rem;
+}
+#errors{
+    color:red;
+    font-size:0.8rem;
+    position: relative;
+    left:12rem;
+    display: none;
+}
+#custom{
+    padding:0.6rem 0.4rem 0.5rem 0.6rem;
+    text-align:start;
+    font-size:0.9rem;
+    font-weight:800;
+    border-radius:0.4rem;
+    border-style:solid;
+    border-width:1px;
+    border-color:var(--Verydarkcyan);
+    color:var(--Verydarkcyan)
+}
+button:nth-child(4){
+    padding:0.5rem 1.5rem 0.5rem 1.5rem;
+    border:0;
+    background-color: var(--Verydarkcyan);
+    border-radius:0.4rem;
+    color:white;
+    font-weight:700;
+}
+button:nth-child(5){
+    padding:0.5rem 1.5rem 0.5rem 1.5rem;
+    border:0;
+    background-color: var(--Verydarkcyan);
+    border-radius:0.4rem;
+    color:white;
+    font-weight:700;
+}
+#first-amount,#second-amount{
+    position: relative;
+    top:2rem;
+}
+input{
+    text-align:end;
+    border-color:var(--Verydarkcyan);
+}
+#first-amount,#second-amount{
+    display: flex;
+    justify-content:space-between;
+    font-weight:1000;
+    font-size:0.9rem;
+}
+#price{
+    position: relative;
+    top:-0.1rem;
+    font-size:2rem;
+    font-weight:800;
+    color:var(--Strongcyan);
+}
+#second-wrapper{
+    padding:1.5rem;
+    width:20rem;
+    display: flex;
+    flex-direction:column;
+    gap:3rem;
+    border-radius:1rem;
+    background-color: var(--Verydarkcyan);
+    color:var(--White);
+}
+#biller,#num-people{
+position: relative;
+top:1rem;
+width:20rem;
+padding-top:0.1rem;
+padding-bottom:0.1rem;
+font-size:1.5rem;
+font-weight:800;
+border-radius:0.5rem;
+border-style:solid;
+background-color:var(--Verylightgrayishcyan);
+border:0;
+color:var(--Verydarkcyan)
+}
+#first-wrapper{
+    padding:2rem;
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    background-color: var(--White);
+    color:var(--Verydarkcyan);
+}
+body{
+    background-color:var(--Lightgrayishcyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+#cont{
+    display: flex;
+    background-color: var(--White);
+    padding:1.3rem;
+    border-radius:0.8rem;
+}
+#btn{
+   border-style:solid;
+   padding:0.8rem;
+   position: relative;
+   top:5rem;
+   font-size:1rem;
+   width:20rem;
+   color:var(--Verydarkcyan);
+   background-color: var(--Strongcyan);
+}
+button:hover{
+    background-color:var(--Lightgrayishcyan);
+    transition:0.3s;
+    color:var(--Verydarkcyan)
+}
+#btn:hover{
+    background-color:var(--Lightgrayishcyan);
+    transition:0.3s;
+}
+button:active{
+    transform:scale(1.1);
+}
+@media (max-width:800px) {
+    #cont{
+        width:37rem;
+    }
+    #biller,#num-people{
+        width:15rem;
+    }
+    button:nth-child(1){
+        width:4rem;
+        display:flex;
+        justify-content: center;
+    }
+    button:nth-child(2){
+        width:4rem;
+        display:flex;
+        justify-content: center;
+    }
+    button:nth-child(3){
+        width:4rem;
+        display:flex;
+        justify-content: center;
+    }
+      button:nth-child(4){
+        width:4.5rem;
+        display:flex;
+        justify-content: center;
+    }
+    button:nth-child(5){
+        width:4.5rem;
+        display:flex;
+        justify-content: center;
+    }
+    #custom{
+        width:3.5rem;
+    }
+    #errors{
+        left:8rem;
+    }
+    #second-wrapper{
+        width:17rem;
+        position: relative;
+        right:5rem;
+    }
+    #btn{
+        width:15rem;
+     }
+     h1{
+        left:16rem;
+     }
+}
+@media (max-width:650px) {
+    #cont{
+       flex-direction: column;
+       width:23rem;
+    }
+    body{
+        padding-top:13rem;
+        padding-bottom:2rem;
+    }
+    #second-wrapper{
+        width:20rem;
+        right:0rem;
+    }
+    #first-wrapper{
+        width:16rem;
+    }
+    h1{
+        left:10rem;
+     }
+     #btn{
+        width:20rem;
+        top:-1rem;
+     }
+     #biller,#num-people{
+        width:20rem
+     }
+     #first-amount,#second-amount{
+        position: relative;
+        top:1rem;
+    }
+    #second-amount{
+        position: relative;
+        top:-1rem;
+    }
+    #errors{
+        left:16em;
+    }
+}
+@media (max-width:420px) {
+    #cont{
+        width:17rem;
+     }
+     #first-wrapper{
+        width:13rem;
+    }
+    #biller,#num-people{
+        width:14rem
+     }
+     #second-wrapper{
+        width:14rem;
+    }
+    #btn{
+        width:14rem;
+     }
+     h1{
+        left:7rem;
+     }
+     #component{
+        grid-template-columns: auto auto;
+        width:10rem;
+    }
+    button:nth-child(1){
+        width:6rem;
+    }
+    button:nth-child(2){
+        width:6rem;
+    }
+    button:nth-child(3){
+        width:6rem;
+    }
+      button:nth-child(4){
+        width:6rem;
+    }
+    button:nth-child(5){
+        width:6rem;
+    }
+    #custom{
+        width:5rem;
+    }
+    #errors{
+        left:7rem;
+    }
+    #priceone,#pricetwo{
+        font-size:1.5rem;
+    }
+    label{
+        font-size:0.9rem;
+    }
+    h2{
+        font-size:0.9rem;
+    }
+    #tip-amount,#total{
+    font-size:0.7rem;
+    }
+    #first-amount,#second-amount{
+        position: relative;
+        top:1rem;
+    }
+    #second-amount{
+        position: relative;
+        top:-0.8rem;
+    }
+}
+@media (max-width:330px) {
+    #cont{
+        width:14rem;
+     }
+     #first-wrapper{
+        width:8rem;
+    }
+    #biller,#num-people{
+        width:10rem;
+     }
+     #component{
+        grid-template-columns: auto ;
+        width:10rem;
+    }
+    button:nth-child(1){
+        width:10rem;
+    }
+    button:nth-child(2){
+        width:10rem;
+    }
+    button:nth-child(3){
+        width:10rem;
+    }
+      button:nth-child(4){
+        width:10rem;
+    }
+    button:nth-child(5){
+        width:10rem;
+    }
+    #custom{
+        width:9rem;
+    }
+    #errors{
+        left:3rem;
+    }
+    #priceone,#pricetwo{
+        font-size:1.5rem;
+    }
+    #second-wrapper{
+        width:11rem;
+    }
+    #btn{
+        width:11rem;
+     }
+     h1{
+        left:5.5rem;
+     }
+}

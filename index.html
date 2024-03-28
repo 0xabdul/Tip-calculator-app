@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div id="container" role="main">
+    <h1>SPLI TTER</h1> 
+    <div id="cont">  
+    <div id="first-wrapper">
+    <label for="bill">
+    Bill
+    <input type="number" id="biller" name="bill" placeholder="0"></input>
+    </label>
+    <div id="select-tip">
+    <h2>Select Tip %</h2>  
+    <div id="component">
+    <button id="five">5%</button>
+    <button id="ten">10%</button>
+    <button id="fifiten">15%</button>
+    <button id="twentyfive">25%</button>
+    <button id="fivety">50%</button>
+    <label for="custom">
+    <input type="text" id="custom" name="custom" placeholder="custom"></input>
+    </label>
+    </div>
+    </div>
+    <label for="numpeople">
+    Number of People
+    <p id="errors">can't be zero</p>
+    <input type="number" id="num-people" name="numpeople" placeholder="0"></input>
+    </label>
+    </div>
+    <div id="second-wrapper">
+    <div id="first-amount">
+    <div id="tip-amount">
+    <p>Tip Amount</p>
+    <p>/ person</p>   
+    </div>
+    <div id="price">
+     <p id="priceone">$0.00</p>   
+    </div>
+    </div>
+    <div id="second-amount">
+    <div id="total">
+    <p>Total</p>
+    <p>/ person</p>   
+    </div>
+    <div id="price">
+    <p id="pricetwo">$0.00</p>   
+    </div>
+    </div>
+    <button id="btn">Reset</button>
+    </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
